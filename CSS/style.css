@@ -1,0 +1,142 @@
+﻿header
+{
+	display: grid;
+	grid-template-columns: auto minmax(auto, 20em) 1fr;
+	grid-template-rows: minmax (2.75em auto);
+	font-size: 2rem;
+}
+
+header>a,header>nav,header> section
+{
+	display: inline-grid;
+	place-items: center;
+	
+}
+
+header > nav
+{
+	grid-template-columns: auto auto auto;
+	
+}
+
+header > section
+{
+	grid-template-columns: auto auto;
+	justify-self: end;
+	column-gap: 0.5em;
+	background-color: green;
+}
+
+
+
+header a
+{
+	text-decoration: none;
+	
+}
+
+
+header>a,header>nav>a
+{
+	color: red;
+	padding:25px;
+	display: inline-block;
+}
+
+header >a
+{
+	background-color: blue;
+}
+
+
+header > a
+{
+	color: green;
+}
+
+nav
+{
+	display: inline-block;
+}
+
+h1~p
+{
+	color:gray;
+}
+
+h1+p
+{
+	color:black
+}
+header > a,main>h1
+{
+	text-transform: uppercase;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header>nav>a:hover
+{
+	color: black;
+	background-color: magenta;
+}
+
+main > h1::before
+{
+	content: "Обратите внимание."
+}
+
+main > h1::after
+{
+	content: "."
+}
+@media (max-width: 320px)
+{
+	header
+	{
+		grid-template-columns: 1fr;
+	}
+	
+	header> section,header> nav
+	{
+		grid-template-rows: minmax(2.75em, auto);
+		
+	}
+	header>section
+	{
+		justify-self: center;
+	}
+}
+@media (max-width: 767px)
+{
+	header
+	{
+		grid-template-columns: 1fr;
+	}
+	
+	header> section,header> nav
+	{
+		grid-template-rows: minmax(2.75em, auto);
+		
+	}
+	header>section
+	{
+		justify-self: center;
+	}
+}
+
+#Button
+{
+	background-color: lightblue;
+	padding: lem;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}

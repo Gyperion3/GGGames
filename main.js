@@ -1,0 +1,1 @@
+document.getElementById("GGames").innerText="Новый текст для абзаца из js файла!";

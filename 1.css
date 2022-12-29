@@ -1,0 +1,31 @@
+header a
+{
+	text-decoration: none;
+}
+
+/*
+header>nav>a
+{
+	color: red;
+}
+*/
+
+header > a
+{
+	color: green;
+}
+
+nav
+{
+	display: inline-block;
+}
+
+h1~p
+{
+	color:gray;
+}
+
+h1+p
+{
+	color:black
+}
